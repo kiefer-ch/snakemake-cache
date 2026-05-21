@@ -11,7 +11,7 @@ rule update_gencode:
             config["GENCODE_RELEASE"], config["GENCODE_RELEASE"]),
         "resources/gencode/gencode_human/release_{}/GRCh38.primary_assembly.genome.fa".format(
             config["GENCODE_RELEASE"]),
-        "resources/gencode/gencode_human/release_{}/gencode.v{}.transcripts.fa".format(
+        "resources/gencode/gencode_human/release_{}/gencode.v{}.primary_assembly.annotation.gtf".format(
             config["GENCODE_RELEASE"], config["GENCODE_RELEASE"])
 
 
