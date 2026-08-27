@@ -22,6 +22,10 @@ rule update_indices:
         "resources/gencode/gencode_human/release_{}/salmon_index_gencode_human_{}".format(
             config["GENCODE_RELEASE"], config["GENCODE_RELEASE"]),
         "resources/gencode/gencode_human/release_{}/STAR_index_gencode_human_{}".format(
+            config["GENCODE_RELEASE"], config["GENCODE_RELEASE"]),
+        "resources/gencode/gencode_human/release_{}/minimap2_index_gencode_human_genome_{}_splice.mmi".format(
+            config["GENCODE_RELEASE"], config["GENCODE_RELEASE"]),
+        "resources/gencode/gencode_human/release_{}/minimap2_index_gencode_human_transcriptome_{}_map-ont.mmi".format(
             config["GENCODE_RELEASE"], config["GENCODE_RELEASE"])
 
 
@@ -29,3 +33,4 @@ rule update_indices:
 include: "workflow/rules/gencode.smk"
 include: "workflow/rules/star.smk"
 include: "workflow/rules/salmon.smk"
+include: "workflow/rules/minimap2.smk"
